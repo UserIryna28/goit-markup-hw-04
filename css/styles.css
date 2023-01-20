@@ -47,7 +47,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
 }
 .header {
   padding-top: 24px;
@@ -116,8 +115,7 @@ img {
   color: var(--secondary-title-color);
 }
 /* ----hero----- */
-.background {
-}
+
 .cover {
   background-color: #2e2f42;
   padding-top: 188px;
@@ -153,14 +151,14 @@ img {
   line-height: 1.5;
   cursor: pointer;
   color: var(--cover-color);
-  background-color: #4d5ae5;
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 .cover-button:hover,
 .cover-button:focus {
-  color: var(--accent-color);
   background-color: var(--cover-color);
+  color: var(--accent-color);
 }
 /* ----features---- */
 .features {
@@ -188,6 +186,35 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.features-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.features-social-item {
+  width: 264px;
+  height: 112px;
+}
+.features-social-link {
+  width: 100%;
+  height: 100%;
+  background: #f4f4fd;
+  border: 1px solid #f4f4fd;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #2e2f42;
+}
+.features-social-icon {
+  fill: currentColor;
+}
+
+.features-social-link:hover,
+.features-social-link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
 .section-suptitle {
   font-weight: 500;
   font-size: 20px;
@@ -213,6 +240,13 @@ img {
   padding-bottom: 32px;
   text-align: center;
 }
+.services-interactiv:hover::before {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.services-interactiv:hover::after {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .services-content {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -249,6 +283,10 @@ img {
 .box-first:not(:last-child) {
   margin-right: 24px;
 }
+.title-list {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .team {
   background-color: #f4f4fd;
 }
@@ -270,10 +308,58 @@ img {
 .team-soc-link {
   width: 100%;
   height: 100%;
-  background-color: #4d5ae5;
-  display: block;
+  background-color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
 }
+.team-soc-item :hover,
+.team-soc-item :focus {
+  background-color: #434455;
+}
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+.customers-item {
+  width: calc((100%-120px) / 6);
+  height: 88px;
+}
+.customers-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  /* display: block; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8e8f99;
+}
+
+.customers-icon {
+  fill: currentColor;
+}
+.customers-link:hover,
+.customers-link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+/* .customers-link:hover,
+.customers-link:focus {
+  border-color: var(--accent-color);
+}
+.customers-link:hover,
+.customers-link:focus .customers-icon {
+  fill: var(--accent-color);
+}
+ */
 
 /* -------------HERO PORTFOLIO----------------- */
 .hero-title {
@@ -308,6 +394,14 @@ img {
   gap: 24px;
   justify-content: center;
 }
+.hero-button:hover::before {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.hero-button:hover::after {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 .portfolio {
   padding-top: 96px;
 }
@@ -317,6 +411,8 @@ img {
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
+  display: flex;
+  align-items: baseline;
 }
 .footer .nav-logo {
   margin-right: 0;
@@ -332,4 +428,45 @@ img {
 }
 .box-third {
   width: 264px;
+}
+
+.footer-second-part-title {
+  display: flex;
+  color: #ffffff;
+  text-align: left;
+}
+.footer-second-part-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.footer-second-part-item {
+  width: 40px;
+  height: 40px;
+  margin-top: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+}
+.footer-second-part-item:hover,
+.footer-second-part-item:focus {
+  background-color: var(--accent-color);
+}
+.footer-second-part-link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.footer-second-part-icon {
+  fill: #f4f4fd;
+}
+.box-fourth {
+  width: 208px;
+}
+.social {
+  display: flex;
+  align-items: baseline;
+  gap: 120px;
 }
