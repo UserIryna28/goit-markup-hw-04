@@ -157,8 +157,7 @@ img {
 }
 .cover-button:hover,
 .cover-button:focus {
-  background-color: var(--cover-color);
-  color: var(--accent-color);
+  background-color: #404bbf;
 }
 /* ----features---- */
 .features {
@@ -240,13 +239,15 @@ img {
   padding-bottom: 32px;
   text-align: center;
 }
-.services-interactiv:hover::before {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-.services-interactiv:hover::after {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
 
+.services-interactiv {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.services-interactiv:hover,
+.services-interactiv:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .services-content {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -283,7 +284,8 @@ img {
 .box-first:not(:last-child) {
   margin-right: 24px;
 }
-.title-list {
+
+.team-item {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -316,7 +318,7 @@ img {
 }
 .team-soc-item :hover,
 .team-soc-item :focus {
-  background-color: #434455;
+  background-color: #404bbf;
 }
 .customers {
   padding-top: 120px;
@@ -347,8 +349,8 @@ img {
 }
 .customers-link:hover,
 .customers-link:focus {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
+  color: #404bbf;
+  border-color: #404bbf;
 }
 
 /* .customers-link:hover,
@@ -384,8 +386,7 @@ img {
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: var(--accent-color);
-  color: #f4f4fd;
+  background-color: #404bbf;
 }
 .hero-list {
   list-style: none;
@@ -444,20 +445,20 @@ img {
   width: 40px;
   height: 40px;
   margin-top: 16px;
+
   background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: center;
+  border-radius: 50%;
 }
 .footer-second-part-item:hover,
 .footer-second-part-item:focus {
-  background-color: var(--accent-color);
+  background-color: #31d0aa;
 }
 .footer-second-part-link {
   width: 100%;
   height: 100%;
   display: block;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
 }
 .footer-second-part-icon {
   fill: #f4f4fd;
