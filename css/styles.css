@@ -433,7 +433,7 @@ img {
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--botder-color);
+  color: var(--main-border-color);
   margin-top: 16px;
 }
 .box-third {
