@@ -221,7 +221,7 @@ img {
   color: var(--primary-title-color);
 }
 
-.features-social-icon:hover,
+/* .features-social-icon:hover,
 .features-social-icon:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
@@ -230,7 +230,7 @@ img {
 .content:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
-}
+} */
 
 .section-suptitle {
   font-weight: 500;
